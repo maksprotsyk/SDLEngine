@@ -1,0 +1,137 @@
+{
+  "BackgroundColor": {"R": 0, "G": 255, "B": 0, "A": 255},
+  "Parefabs": [
+    {
+      "Name": "fps",
+      "Components": [
+        {
+          "Name": "RenderableText",
+          "FontName": "resources/RobotoMono.ttf"
+        },
+        {
+          "Name": "FPSScript"
+        }
+      ]
+    },
+    {
+      "Name": "particle",
+      "Components": [
+        {
+          "Name": "RenderableCircle",
+          "Radius": 0.02,
+          "Color": {
+            "R": 255
+          }
+        },
+        {
+          "Name": "CircleCollider",
+          "Radius": 0.02
+        },
+        {
+          "Name": "RigidBody",
+          "Mass": 2
+        }
+      ]
+    }
+  ],
+  "Objects": [
+    {
+      "Transform": {
+        "Position": {
+          "Y": -0.2
+        }
+      },
+      "Components": [
+        {
+          "Name": "RenderablePolygon",
+          "Color": {
+            "R": 128
+          },
+          "Points": [
+            {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            {
+              "X": 1.0,
+              "Y": 0.0
+            },
+            {
+              "Y": 0.6,
+              "X": 1.0
+            },
+            {
+              "Y": 1.0,
+              "X": 0.5
+            },
+            {
+              "Y": 0.6,
+              "X": 0.0
+            }
+          ],
+          "Width": 0.2,
+          "Height": 0.2
+        }
+      ]
+    },
+    {
+      "Components": [
+        {
+          "Name": "RenderableCircle",
+          "Radius": 0.1,
+          "Color": {
+            "R": 255
+          }
+        },
+        {
+          "Name": "CircleCollider",
+          "Radius": 0.1
+        },
+        {
+          "Name": "TestScript"
+        },
+        {
+          "Name": "RigidBody",
+          "Mass": 10,
+          "Static": true
+        }
+      ]
+    },
+    {
+      "Prefab": "particle",
+      "Transform": {
+        "Position": {
+          "Y": -0.3,
+          "X": 0.0
+        }
+      }
+    },
+    {
+      "Prefab": "particle",
+      "Transform": {
+        "Position": {
+          "Y": -0.3,
+          "X": -0.05
+        }
+      }
+    },
+    {
+      "Prefab": "particle",
+      "Transform": {
+        "Position": {
+          "Y": -0.3,
+          "X": 0.05
+        }
+      }
+    },
+    {
+      "Prefab":"fps",
+      "Transform": {
+        "Position": {
+          "X": -0.4,
+          "Y": -0.45
+        }
+      }
+    }
+  ]
+}

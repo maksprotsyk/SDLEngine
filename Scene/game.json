@@ -1,0 +1,6 @@
+{
+  "Scenes": {
+    "test": "Scene/test.json",
+    "test2": "Scene/test2.json"
+  }
+}
